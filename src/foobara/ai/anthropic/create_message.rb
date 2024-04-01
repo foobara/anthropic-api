@@ -11,11 +11,11 @@ module Foobara
           # TODO: extract this list into a foobara type
           system :string
           max_tokens :integer, default: 1024
-          model :model
+          model :model, default: Types::ModelEnum::CLAUDE_3_OPUS
           messages [Types::Message]
         end
 
-        result Types::Completion
+        result Types::MessageResult
 
         def execute
           build_request_body
@@ -34,7 +34,15 @@ module Foobara
         end
 
         def build_request_headers
-          self.request_headers = { "Content-Type" => "application/json", "X-Api-Key" => api_token }
+          self.request_headers = {
+            "Content-Type" => "application/json",
+            "X-Api-Key" => api_token,
+            "Anthropic-Version" => "2023-06-01"
+          }
+        end
+
+        def api_token
+          inputs[:api_token] || ENV.fetch("ANTHROPIC_API_KEY", nil)
         end
 
         def issue_http_request

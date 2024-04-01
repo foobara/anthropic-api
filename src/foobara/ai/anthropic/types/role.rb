@@ -1,14 +1,14 @@
 module Foobara
   module Ai
-    module Anththropic
+    module Anthropic
       module Types
         module RoleEnum
           ASSISTANT = :assistant
           USER = :user
         end
-
-        Role = Anthropic.foobara_register_type(:role, :symbol, one_of: RoleEnum)
       end
+
+      Types::Role = foobara_register_type(:role, :symbol, one_of: Types::RoleEnum)
     end
   end
 end

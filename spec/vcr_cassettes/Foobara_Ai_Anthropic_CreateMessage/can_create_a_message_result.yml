@@ -1,0 +1,79 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://api.anthropic.com/v1/messages
+    body:
+      encoding: UTF-8
+      string: '{"model":"claude-3-opus-20240229","max_tokens":1024,"messages":[{"role":"user","content":"What
+        is the PH of honey?"}]}'
+    headers:
+      Content-Type:
+      - application/json
+      X-Api-Key:
+      - "<ANTHROPIC_API_KEY>"
+      Anthropic-Version:
+      - '2023-06-01'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - api.anthropic.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 02 Apr 2024 23:54:32 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Anthropic-Ratelimit-Requests-Limit:
+      - '5'
+      Anthropic-Ratelimit-Requests-Remaining:
+      - '4'
+      Anthropic-Ratelimit-Requests-Reset:
+      - '2024-04-02T23:55:00Z'
+      Anthropic-Ratelimit-Tokens-Limit:
+      - '10000'
+      Anthropic-Ratelimit-Tokens-Remaining:
+      - '10000'
+      Anthropic-Ratelimit-Tokens-Reset:
+      - '2024-04-02T23:55:00Z'
+      Request-Id:
+      - req_019Ra39s95SFPRXRerDvJJsk
+      X-Cloud-Trace-Context:
+      - 70c424f94125af18b655c1f205e43d6f
+      Via:
+      - 1.1 google
+      Cf-Cache-Status:
+      - DYNAMIC
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 86e4be54e8ea17e8-SJC
+    body:
+      encoding: ASCII-8BIT
+      string: '{"id":"msg_01H7YYjGWa51mJt5gJPmMuoV","type":"message","role":"assistant","content":[{"type":"text","text":"The
+        pH of honey typically ranges from 3.2 to 4.5, with an average of around 3.9.
+        This means that honey is acidic.\n\nSeveral factors contribute to the acidity
+        of honey:\n\n1. Floral source: The nectar of different flower types can influence
+        the pH of the resulting honey.\n\n2. Geographical origin: The soil composition
+        and environmental conditions where the nectar-producing plants grow can affect
+        the honey''s pH.\n\n3. Presence of organic acids: Honey naturally contains
+        organic acids, such as gluconic acid, which is produced by the action of bee-derived
+        enzymes on the sugars in nectar.\n\nThe acidity of honey contributes to its
+        flavor profile and helps to preserve it by inhibiting the growth of bacteria
+        and other microorganisms. However, the pH of honey can vary depending on the
+        specific type and origin of the honey. Some varieties, such as chestnut honey,
+        tend to have a higher pH and, consequently, a milder taste compared to other
+        types of honey."}],"model":"claude-3-opus-20240229","stop_reason":"end_turn","stop_sequence":null,"usage":{"input_tokens":15,"output_tokens":224}}'
+  recorded_at: Tue, 02 Apr 2024 23:54:32 GMT
+recorded_with: VCR 6.2.0

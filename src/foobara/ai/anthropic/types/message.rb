@@ -1,6 +1,6 @@
 module Foobara
   module Ai
-    module Anththropic
+    module Anthropic
       module Types
         class Message < Foobara::Model
           attributes do

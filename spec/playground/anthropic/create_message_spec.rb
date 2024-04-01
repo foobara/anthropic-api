@@ -22,9 +22,9 @@ RSpec.describe Foobara::Ai::Anthropic::CreateMessage do
   let(:result) { outcome.result }
   let(:errors) { outcome.errors }
 
-  it "can generate a completion", vcr: { record: :none } do
+  it "can create a message result", vcr: { record: :once } do
     expect(outcome).to be_success
     expect(result).to be_a(Foobara::Ai::Anthropic::Types::MessageResult)
-    expect(result.choices.first.message.content).to match(/pH of honey.*\d+\.\d+ and \d+\.\d+/)
+    expect(result.content.first.text).to match(/pH of honey.*\d+\.\d+ (and|to) \d+\.\d+/i)
   end
 end

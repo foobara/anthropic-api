@@ -1,6 +1,6 @@
 GIT
   remote: foobara
-  revision: 1497ea7e69e26a9fddaae9e688e899bd47835e64
+  revision: 6075e6a95ad43bfacc5df446b6a68cb3115db5fe
   branch: main
   specs:
     foobara (0.0.1)
@@ -26,7 +26,7 @@ GIT
 
 GIT
   remote: https://github.com/foobara/empty-ruby-project-generator.git
-  revision: 36a025f9ae265616abf91621937e955c25a647e4
+  revision: 2eaed58aab2e9ff0a5e8f8c3e9e699bff5276a78
   specs:
     foobara-empty-ruby-project-generator (0.1.0)
 
@@ -38,19 +38,19 @@ GIT
 
 GIT
   remote: https://github.com/foobara/foob.git
-  revision: b309970c143d168b3bae38d560ea48537f503237
+  revision: 1da7299ac3bbd0a4834cd7e5f62c4f908819d393
   specs:
     foobara-foob (0.0.1)
 
 GIT
   remote: https://github.com/foobara/organization-generator.git
-  revision: 1014db59d39074f0d6499fbcb12e67288ee7b4d3
+  revision: fc4403fc099dc0dfd454ebfcb75b73f2757db6c4
   specs:
     foobara-organization-generator (0.0.1)
 
 GIT
   remote: https://github.com/foobara/rubocop-rules.git
-  revision: e9d8f5c45ea37810f369d1c2f46e3e386d5abb2c
+  revision: 14fed1e360c95f20531aee72f95d7ce27e8cc9a2
   specs:
     foobara-rubocop-rules (0.0.1)
       rubocop
@@ -58,7 +58,7 @@ GIT
 
 GIT
   remote: https://github.com/foobara/sh-cli-connector.git
-  revision: 70749dd5145707c658258b4628c0bb54b5e72c76
+  revision: 36e164ac2c9c8874c033c355ec43168fd48f9b7a
   specs:
     foobara-sh-cli-connector (0.1.0)
 
