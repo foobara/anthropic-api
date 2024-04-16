@@ -1,6 +1,6 @@
 GIT
   remote: foobara
-  revision: e00ad6e87a370ac57984b5307f5da6908352b412
+  revision: a89e18a0c62b7adde37171917c299d47a3039667
   branch: main
   specs:
     foobara (0.0.1)
@@ -70,7 +70,7 @@ GIT
 
 GIT
   remote: https://github.com/foobara/util.git
-  revision: ebf430ec00a389ec11e7f8e233131b1b36a1b6f1
+  revision: 659d4e4fd5dd74ca005650fc4bcc2ac1ee7809ec
   specs:
     foobara-util (0.1.0)
 
@@ -111,7 +111,7 @@ GEM
       guard-compat (~> 1.1)
       rspec (>= 2.99.0, < 4.0)
     hashdiff (1.1.0)
-    json (2.7.1)
+    json (2.7.2)
     language_server-protocol (3.17.0.3)
     listen (3.9.0)
       rb-fsevent (~> 0.10, >= 0.10.3)
@@ -157,7 +157,7 @@ GEM
       diff-lcs (>= 1.2.0, < 2.0)
       rspec-support (~> 3.13.0)
     rspec-support (3.13.1)
-    rubocop (1.62.1)
+    rubocop (1.63.2)
       json (~> 2.3)
       language_server-protocol (>= 3.17.0)
       parallel (~> 1.10)
@@ -176,12 +176,12 @@ GEM
       rubocop (~> 1.41)
     rubocop-rake (0.6.0)
       rubocop (~> 1.0)
-    rubocop-rspec (2.28.0)
+    rubocop-rspec (2.29.1)
       rubocop (~> 1.40)
       rubocop-capybara (~> 2.17)
       rubocop-factory_bot (~> 2.22)
       rubocop-rspec_rails (~> 2.28)
-    rubocop-rspec_rails (2.28.2)
+    rubocop-rspec_rails (2.28.3)
       rubocop (~> 1.40)
     ruby-prof (1.7.0)
     ruby-progressbar (1.13.0)
