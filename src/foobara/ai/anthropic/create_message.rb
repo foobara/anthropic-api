@@ -8,7 +8,6 @@ module Foobara
           # TODO: come up with some kind of execution context object to wrap all of these calls upon which
           # data wrapping a "request" can live instead of being passed around?
           api_token :string
-          # TODO: extract this list into a foobara type
           system :string
           max_tokens :integer, default: 1024
           model :model, default: Types::ModelEnum::CLAUDE_3_OPUS
