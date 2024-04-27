@@ -1,6 +1,6 @@
 module Foobara
   module Ai
-    module Anthropic
+    module AnthropicApi
       class CreateMessage < Foobara::Command
         URL = "https://api.anthropic.com/v1/messages".freeze
 

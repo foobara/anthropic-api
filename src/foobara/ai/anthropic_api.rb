@@ -5,7 +5,7 @@ module Foobara
   module Ai
     foobara_organization!
 
-    module Anthropic
+    module AnthropicApi
       foobara_domain!
     end
   end

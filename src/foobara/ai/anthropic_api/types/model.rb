@@ -1,6 +1,6 @@
 module Foobara
   module Ai
-    module Anthropic
+    module AnthropicApi
       module Types
         module ModelEnum
           CLAUDE_3_OPUS = "claude-3-opus-20240229".freeze
@@ -8,7 +8,7 @@ module Foobara
           CLAUDE_3_HAIKU = "claude-3-haiku-20240307".freeze
         end
 
-        Model = Anthropic.foobara_register_type(:model, :string, one_of: ModelEnum)
+        Model = AnthropicApi.foobara_register_type(:model, :string, one_of: ModelEnum)
       end
     end
   end

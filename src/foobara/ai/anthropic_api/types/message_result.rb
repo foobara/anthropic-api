@@ -3,7 +3,7 @@ require_relative "role"
 
 module Foobara
   module Ai
-    module Anthropic
+    module AnthropicApi
       module Types
         class MessageResult < Foobara::Model
           class Content < Foobara::Model

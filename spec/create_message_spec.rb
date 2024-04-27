@@ -1,4 +1,4 @@
-RSpec.describe Foobara::Ai::Anthropic::CreateMessage do
+RSpec.describe Foobara::Ai::AnthropicApi::CreateMessage do
   let(:inputs) do
     {
       api_token:,
@@ -22,9 +22,9 @@ RSpec.describe Foobara::Ai::Anthropic::CreateMessage do
   let(:result) { outcome.result }
   let(:errors) { outcome.errors }
 
-  it "can create a message result", vcr: { record: :once } do
+  it "can create a message result", vcr: { record: :none } do
     expect(outcome).to be_success
-    expect(result).to be_a(Foobara::Ai::Anthropic::Types::MessageResult)
+    expect(result).to be_a(Foobara::Ai::AnthropicApi::Types::MessageResult)
     expect(result.content.first.text).to match(/pH of honey.*\d+\.\d+ (and|to) \d+\.\d+/i)
   end
 end
