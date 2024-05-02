@@ -6,20 +6,6 @@ module Foobara
     module AnthropicApi
       module Types
         class MessageResult < Foobara::Model
-          class Content < Foobara::Model
-            attributes do
-              text :string, :required
-              type :string, :required, one_of: %w[text]
-            end
-          end
-
-          class Usage < Foobara::Model
-            attributes do
-              input_tokens :integer, :required
-              output_tokens :integer, :required
-            end
-          end
-
           attributes do
             content [Content]
             id :string, :required
