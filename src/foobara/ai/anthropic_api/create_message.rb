@@ -10,7 +10,7 @@ module Foobara
           api_token :string
           system :string
           max_tokens :integer, default: 1024
-          model :model, default: Types::ModelEnum::CLAUDE_3_OPUS
+          model :model, default: Types::ModelEnum::CLAUDE_3_5_SONNET
           messages [Types::Message]
         end
 
