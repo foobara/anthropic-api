@@ -1,100 +1,36 @@
-GIT
-  remote: foobara
-  revision: dbc26862eb33b3fa0fb893ef0bffcbf306ddf2f6
-  branch: main
-  specs:
-    foobara (0.0.1)
-
-GIT
-  remote: https://github.com/foobara/command-generator.git
-  revision: b5aaf39f10cd39c48a017cc224fd8594bfa676f1
-  specs:
-    foobara-command-generator (0.0.1)
-
-GIT
-  remote: https://github.com/foobara/domain-generator.git
-  revision: fb20b2d893315a6fe723875a1d27b3ba3c91306f
-  specs:
-    foobara-domain-generator (0.0.1)
-
-GIT
-  remote: https://github.com/foobara/dotenv-loader.git
-  revision: 15bd91f9f7b2793c1766584e8661c87a5c81085d
-  specs:
-    foobara-dotenv-loader (0.1.0)
-      dotenv
-
-GIT
-  remote: https://github.com/foobara/empty-ruby-project-generator.git
-  revision: 2b2bde0c0f90867e07f826d251e95f116de9b2df
-  specs:
-    foobara-empty-ruby-project-generator (0.1.0)
-
-GIT
-  remote: https://github.com/foobara/files-generator.git
-  revision: 9c9c49a095adde08985cef2e8a5ff8037ad1ead9
-  specs:
-    foobara-files-generator (0.1.0)
-
-GIT
-  remote: https://github.com/foobara/foob.git
-  revision: 32e226216f04c02c285add2869774b1d40203c86
-  specs:
-    foobara-foob (0.0.1)
-
-GIT
-  remote: https://github.com/foobara/organization-generator.git
-  revision: 5798ec745753f8774fa5fca5120583c6e6aec25e
-  specs:
-    foobara-organization-generator (0.0.1)
-
-GIT
-  remote: https://github.com/foobara/rubocop-rules.git
-  revision: 14fed1e360c95f20531aee72f95d7ce27e8cc9a2
-  specs:
-    foobara-rubocop-rules (0.0.1)
-      rubocop
-      rubocop-rspec
-
-GIT
-  remote: https://github.com/foobara/sh-cli-connector.git
-  revision: b08ff244e38ea10e01d36d07adb48937fe1998ca
-  specs:
-    foobara-sh-cli-connector (0.1.0)
-
-GIT
-  remote: https://github.com/foobara/spec-helpers.git
-  revision: e4ecc7b01a73b08dc12bd7422162a6afb0abec89
-  specs:
-    foobara-spec-helpers (0.1.0)
-
-GIT
-  remote: https://github.com/foobara/util.git
-  revision: 7459f1000de349ca3ba56122dc66c1a81dcf6c4e
-  specs:
-    foobara-util (0.1.0)
-
 PATH
   remote: .
   specs:
     foobara-anthropic-api (0.0.1)
+      foobara
 
 GEM
   remote: https://rubygems.org/
   specs:
-    addressable (2.8.6)
-      public_suffix (>= 2.0.2, < 6.0)
+    addressable (2.8.7)
+      public_suffix (>= 2.0.2, < 7.0)
     ast (2.4.2)
-    bigdecimal (3.1.7)
+    base64 (0.2.0)
+    bigdecimal (3.1.8)
     byebug (11.1.3)
     coderay (1.1.3)
     crack (1.0.0)
       bigdecimal
       rexml
     diff-lcs (1.5.1)
-    docile (1.4.0)
-    dotenv (3.1.1)
-    ffi (1.16.3)
+    docile (1.4.1)
+    dotenv (3.1.2)
+    ffi (1.17.0-x86_64-linux-gnu)
+    foobara (0.0.4)
+      foobara-util
+    foobara-dotenv-loader (0.0.1)
+      dotenv
+    foobara-rubocop-rules (0.0.4)
+      rubocop
+      rubocop-rspec
+    foobara-spec-helpers (0.0.3)
+      foobara-util
+    foobara-util (0.0.4)
     formatador (1.1.0)
     guard (2.18.1)
       formatador (>= 0.2.4)
@@ -110,20 +46,20 @@ GEM
       guard (~> 2.1)
       guard-compat (~> 1.1)
       rspec (>= 2.99.0, < 4.0)
-    hashdiff (1.1.0)
+    hashdiff (1.1.1)
     json (2.7.2)
     language_server-protocol (3.17.0.3)
     listen (3.9.0)
       rb-fsevent (~> 0.10, >= 0.10.3)
       rb-inotify (~> 0.9, >= 0.9.10)
     lumberjack (1.2.10)
-    method_source (1.0.0)
+    method_source (1.1.0)
     nenv (0.3.0)
     notiffany (0.1.3)
       nenv (~> 0.1)
       shellany (~> 0.0)
-    parallel (1.24.0)
-    parser (3.3.1.0)
+    parallel (1.26.3)
+    parser (3.3.4.2)
       ast (~> 2.4.1)
       racc
     pry (0.14.2)
@@ -132,57 +68,49 @@ GEM
     pry-byebug (3.10.1)
       byebug (~> 11.0)
       pry (>= 0.13, < 0.15)
-    public_suffix (5.0.4)
-    racc (1.7.3)
+    public_suffix (6.0.1)
+    racc (1.8.1)
     rainbow (3.1.1)
-    rake (13.1.0)
+    rake (13.2.1)
     rb-fsevent (0.11.2)
-    rb-inotify (0.10.1)
+    rb-inotify (0.11.1)
       ffi (~> 1.0)
-    regexp_parser (2.9.0)
-    rexml (3.2.6)
+    regexp_parser (2.9.2)
+    rexml (3.3.5)
+      strscan
     rspec (3.13.0)
       rspec-core (~> 3.13.0)
       rspec-expectations (~> 3.13.0)
       rspec-mocks (~> 3.13.0)
     rspec-core (3.13.0)
       rspec-support (~> 3.13.0)
-    rspec-expectations (3.13.0)
+    rspec-expectations (3.13.1)
       diff-lcs (>= 1.2.0, < 2.0)
       rspec-support (~> 3.13.0)
     rspec-its (1.3.0)
       rspec-core (>= 3.0.0)
       rspec-expectations (>= 3.0.0)
-    rspec-mocks (3.13.0)
+    rspec-mocks (3.13.1)
       diff-lcs (>= 1.2.0, < 2.0)
       rspec-support (~> 3.13.0)
     rspec-support (3.13.1)
-    rubocop (1.63.4)
+    rubocop (1.65.1)
       json (~> 2.3)
       language_server-protocol (>= 3.17.0)
       parallel (~> 1.10)
       parser (>= 3.3.0.2)
       rainbow (>= 2.2.2, < 4.0)
-      regexp_parser (>= 1.8, < 3.0)
+      regexp_parser (>= 2.4, < 3.0)
       rexml (>= 3.2.5, < 4.0)
       rubocop-ast (>= 1.31.1, < 2.0)
       ruby-progressbar (~> 1.7)
       unicode-display_width (>= 2.4.0, < 3.0)
-    rubocop-ast (1.31.3)
+    rubocop-ast (1.32.1)
       parser (>= 3.3.1.0)
-    rubocop-capybara (2.20.0)
-      rubocop (~> 1.41)
-    rubocop-factory_bot (2.25.1)
-      rubocop (~> 1.41)
     rubocop-rake (0.6.0)
       rubocop (~> 1.0)
-    rubocop-rspec (2.29.1)
-      rubocop (~> 1.40)
-      rubocop-capybara (~> 2.17)
-      rubocop-factory_bot (~> 2.22)
-      rubocop-rspec_rails (~> 2.28)
-    rubocop-rspec_rails (2.28.3)
-      rubocop (~> 1.40)
+    rubocop-rspec (3.0.4)
+      rubocop (~> 1.61)
     ruby-prof (1.7.0)
     ruby-progressbar (1.13.0)
     shellany (0.0.1)
@@ -192,10 +120,12 @@ GEM
       simplecov_json_formatter (~> 0.1)
     simplecov-html (0.12.3)
     simplecov_json_formatter (0.1.4)
+    strscan (3.1.0)
     thor (1.3.1)
     unicode-display_width (2.5.0)
-    vcr (6.2.0)
-    webmock (3.23.0)
+    vcr (6.3.0)
+      base64
+    webmock (3.23.1)
       addressable (>= 2.8.0)
       crack (>= 0.3.2)
       hashdiff (>= 0.4.0, < 2.0.0)
@@ -204,19 +134,10 @@ PLATFORMS
   x86_64-linux
 
 DEPENDENCIES
-  foobara!
   foobara-anthropic-api!
-  foobara-command-generator!
-  foobara-domain-generator!
-  foobara-dotenv-loader!
-  foobara-empty-ruby-project-generator!
-  foobara-files-generator!
-  foobara-foob!
-  foobara-organization-generator!
-  foobara-rubocop-rules!
-  foobara-sh-cli-connector!
-  foobara-spec-helpers!
-  foobara-util!
+  foobara-dotenv-loader
+  foobara-rubocop-rules
+  foobara-spec-helpers
   guard-rspec
   pry
   pry-byebug
