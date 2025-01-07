@@ -9,7 +9,7 @@ Gem::Specification.new do |spec|
   spec.summary = "No description. Add one."
   spec.homepage = "https://github.com/foobara/anthropic-api"
   spec.license = "None specified yet"
-  spec.required_ruby_version = ">= #{File.read("#{__dir__}/.ruby-version")}"
+  spec.required_ruby_version = Foobara::AnthropicApi::MINIMUM_RUBY_VERSION
 
   spec.metadata["homepage_uri"] = spec.homepage
   spec.metadata["source_code_uri"] = spec.homepage
