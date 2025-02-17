@@ -63,7 +63,7 @@ module Foobara
         end
 
         def build_message_result
-          self.message_result = Types::MessageResult.new(response_body)
+          self.message_result = Types::MessageResult.new(response_body, ignore_unexpected_attributes: true)
         end
       end
     end
