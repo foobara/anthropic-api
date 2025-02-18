@@ -4,6 +4,10 @@ module Foobara
   module Ai
     module AnthropicApi
       class BaseCommand < Foobara::Command
+        class << self
+          attr_accessor :api_token
+        end
+
         include HttpApiCommand
 
         base_url "https://api.anthropic.com/v1"
@@ -22,7 +26,11 @@ module Foobara
         end
 
         def api_token
-          inputs[:api_token] || ENV.fetch("ANTHROPIC_API_KEY", nil)
+          inputs[:api_token] || BaseCommand.api_token || api_token_from_env
+        end
+
+        def api_token_from_env
+          ENV.fetch("ANTHROPIC_API_KEY", nil)
         end
 
         def anthropic_version

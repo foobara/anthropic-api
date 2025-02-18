@@ -1,9 +1,21 @@
 RSpec.describe Foobara::Ai::AnthropicApi::GetPageOfModels do
+  before do
+    allow(command).to receive(:api_token_from_env).and_return(nil)
+  end
+
+  around do |example|
+    old_token = Foobara::Ai::AnthropicApi.api_token
+
+    begin
+      Foobara::Ai::AnthropicApi.api_token = api_token
+      example.run
+    ensure
+      Foobara::Ai::AnthropicApi.api_token = old_token
+    end
+  end
+
   let(:inputs) do
-    {
-      api_token:,
-      limit: 2
-    }
+    { limit: 2 }
   end
   let(:api_token) { ENV.fetch("ANTHROPIC_API_KEY", nil) }
 

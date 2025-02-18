@@ -3,7 +3,7 @@ require_relative "base_command"
 module Foobara
   module Ai
     module AnthropicApi
-      class ListModels < Foobara::Command
+      class ListModels < BaseCommand
         description "A convenience command that will repeatedly fetch pages of models until all are fetched"
 
         inputs do
