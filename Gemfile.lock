@@ -2,7 +2,7 @@ PATH
   remote: .
   specs:
     foobara-anthropic-api (0.0.4)
-      foobara
+      foobara-http-api-command
 
 GEM
   remote: https://rubygems.org/
@@ -26,6 +26,8 @@ GEM
       foobara-util
     foobara-dotenv-loader (0.0.2)
       dotenv
+    foobara-http-api-command (0.0.6)
+      foobara
     foobara-rubocop-rules (0.0.7)
       rubocop
       rubocop-rspec
