@@ -10,7 +10,7 @@ module Foobara
         add_inputs do
           system :string
           max_tokens :integer, default: 1024
-          model :model, default: Types::ModelEnum::CLAUDE_3_5_SONNET
+          model :model, default: Types::ModelEnum::CLAUDE_3_5_SONNET_20241022
           messages [Types::Message]
         end
 

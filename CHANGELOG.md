@@ -1,3 +1,7 @@
+## [0.0.7] - 2025-02-18
+
+- Add a ModelEnum and update list of models
+
 ## [0.0.6] - 2025-02-17
 
 - Make sure new API attributes that Anthropic adds to their API retroactively don't break our models

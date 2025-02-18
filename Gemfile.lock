@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    foobara-anthropic-api (0.0.6)
+    foobara-anthropic-api (0.0.7)
       foobara-http-api-command
 
 GEM
@@ -21,7 +21,7 @@ GEM
     docile (1.4.1)
     dotenv (3.1.7)
     ffi (1.17.1-x86_64-linux-gnu)
-    foobara (0.0.56)
+    foobara (0.0.57)
       bigdecimal
       foobara-util
     foobara-dotenv-loader (0.0.2)
@@ -33,7 +33,7 @@ GEM
       rubocop-rspec
     foobara-spec-helpers (0.0.4)
       foobara-util
-    foobara-util (0.0.9)
+    foobara-util (0.0.11)
     formatador (1.1.0)
     guard (2.19.1)
       formatador (>= 0.2.4)
