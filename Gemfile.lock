@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    foobara-anthropic-api (0.0.4)
+    foobara-anthropic-api (0.0.5)
       foobara-http-api-command
 
 GEM

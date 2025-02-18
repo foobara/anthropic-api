@@ -1,4 +1,4 @@
-require_relative "model"
+require_relative "model_enum"
 require_relative "role"
 
 module Foobara

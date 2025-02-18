@@ -1,0 +1,218 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.anthropic.com/v1/models?limit=2
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Type:
+      - application/json
+      X-Api-Key:
+      - "<ANTHROPIC_API_KEY>"
+      Anthropic-Version:
+      - '2023-06-01'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - api.anthropic.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 18 Feb 2025 01:57:58 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Request-Id:
+      - req_01A5Fa2xPWxqXHzbjDzqyaYP
+      Anthropic-Organization-Id:
+      - 7a8e3751-3b70-4f90-a3ce-07f57c9d0bfc
+      Via:
+      - 1.1 google
+      Cf-Cache-Status:
+      - DYNAMIC
+      X-Robots-Tag:
+      - none
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 913a68d16a6cebf3-SJC
+    body:
+      encoding: ASCII-8BIT
+      string: '{"data":[{"type":"model","id":"claude-3-5-sonnet-20241022","display_name":"Claude
+        3.5 Sonnet (New)","created_at":"2024-10-22T00:00:00Z"},{"type":"model","id":"claude-3-5-haiku-20241022","display_name":"Claude
+        3.5 Haiku","created_at":"2024-10-22T00:00:00Z"}],"has_more":true,"first_id":"claude-3-5-sonnet-20241022","last_id":"claude-3-5-haiku-20241022"}'
+  recorded_at: Tue, 18 Feb 2025 01:57:58 GMT
+- request:
+    method: get
+    uri: https://api.anthropic.com/v1/models?after_id=claude-3-5-haiku-20241022&limit=2
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Type:
+      - application/json
+      X-Api-Key:
+      - "<ANTHROPIC_API_KEY>"
+      Anthropic-Version:
+      - '2023-06-01'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - api.anthropic.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 18 Feb 2025 01:58:10 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Request-Id:
+      - req_01EuWyEr2FueZv6ZNgTSvvuj
+      Anthropic-Organization-Id:
+      - 7a8e3751-3b70-4f90-a3ce-07f57c9d0bfc
+      Via:
+      - 1.1 google
+      Cf-Cache-Status:
+      - DYNAMIC
+      X-Robots-Tag:
+      - none
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 913a6919faff9e5f-SJC
+    body:
+      encoding: ASCII-8BIT
+      string: '{"data":[{"type":"model","id":"claude-3-5-sonnet-20240620","display_name":"Claude
+        3.5 Sonnet (Old)","created_at":"2024-06-20T00:00:00Z"},{"type":"model","id":"claude-3-haiku-20240307","display_name":"Claude
+        3 Haiku","created_at":"2024-03-07T00:00:00Z"}],"has_more":true,"first_id":"claude-3-5-sonnet-20240620","last_id":"claude-3-haiku-20240307"}'
+  recorded_at: Tue, 18 Feb 2025 01:58:10 GMT
+- request:
+    method: get
+    uri: https://api.anthropic.com/v1/models?after_id=claude-3-haiku-20240307&limit=2
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Type:
+      - application/json
+      X-Api-Key:
+      - "<ANTHROPIC_API_KEY>"
+      Anthropic-Version:
+      - '2023-06-01'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - api.anthropic.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 18 Feb 2025 01:58:23 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Request-Id:
+      - req_01EHjRnEsa6SuBfgwWvzwkq4
+      Anthropic-Organization-Id:
+      - 7a8e3751-3b70-4f90-a3ce-07f57c9d0bfc
+      Via:
+      - 1.1 google
+      Cf-Cache-Status:
+      - DYNAMIC
+      X-Robots-Tag:
+      - none
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 913a6969bef69441-SJC
+    body:
+      encoding: ASCII-8BIT
+      string: '{"data":[{"type":"model","id":"claude-3-opus-20240229","display_name":"Claude
+        3 Opus","created_at":"2024-02-29T00:00:00Z"},{"type":"model","id":"claude-3-sonnet-20240229","display_name":"Claude
+        3 Sonnet","created_at":"2024-02-29T00:00:00Z"}],"has_more":true,"first_id":"claude-3-opus-20240229","last_id":"claude-3-sonnet-20240229"}'
+  recorded_at: Tue, 18 Feb 2025 01:58:23 GMT
+- request:
+    method: get
+    uri: https://api.anthropic.com/v1/models?after_id=claude-3-sonnet-20240229&limit=2
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Type:
+      - application/json
+      X-Api-Key:
+      - "<ANTHROPIC_API_KEY>"
+      Anthropic-Version:
+      - '2023-06-01'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - api.anthropic.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 18 Feb 2025 01:58:23 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Request-Id:
+      - req_01UpqUJVw8zZ1S9ZwTwTaK5L
+      Anthropic-Organization-Id:
+      - 7a8e3751-3b70-4f90-a3ce-07f57c9d0bfc
+      Via:
+      - 1.1 google
+      Cf-Cache-Status:
+      - DYNAMIC
+      X-Robots-Tag:
+      - none
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 913a696bdc8815eb-SJC
+    body:
+      encoding: ASCII-8BIT
+      string: '{"data":[{"type":"model","id":"claude-2.1","display_name":"Claude 2.1","created_at":"2023-11-21T00:00:00Z"},{"type":"model","id":"claude-2.0","display_name":"Claude
+        2.0","created_at":"2023-07-11T00:00:00Z"}],"has_more":false,"first_id":"claude-2.1","last_id":"claude-2.0"}'
+  recorded_at: Tue, 18 Feb 2025 01:58:23 GMT
+recorded_with: VCR 6.3.1

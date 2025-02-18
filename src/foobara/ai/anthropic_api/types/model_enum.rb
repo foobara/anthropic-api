@@ -9,7 +9,7 @@ module Foobara
           CLAUDE_3_HAIKU = "claude-3-haiku-20240307".freeze
         end
 
-        Model = AnthropicApi.foobara_register_type(:model, :string, one_of: ModelEnum)
+        AnthropicApi.foobara_register_type(:model, :string, one_of: ModelEnum)
       end
     end
   end
