@@ -21,6 +21,7 @@ Gem::Specification.new do |spec|
     "LICENSE.txt"
   ]
 
+  spec.add_dependency "foobara-cached-command"
   spec.add_dependency "foobara-http-api-command"
 
   spec.require_paths = ["lib"]

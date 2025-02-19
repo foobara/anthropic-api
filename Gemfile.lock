@@ -2,6 +2,7 @@ PATH
   remote: .
   specs:
     foobara-anthropic-api (0.0.7)
+      foobara-cached-command
       foobara-http-api-command
 
 GEM
@@ -24,6 +25,8 @@ GEM
     foobara (0.0.57)
       bigdecimal
       foobara-util
+    foobara-cached-command (0.0.2)
+      foobara
     foobara-dotenv-loader (0.0.2)
       dotenv
     foobara-http-api-command (0.0.6)

@@ -1,9 +1,14 @@
 require_relative "base_command"
+require "foobara/cached_command"
 
 module Foobara
   module Ai
     module AnthropicApi
       class ListModels < BaseCommand
+        include CachedCommand
+
+        self.foobara_cache_expiry = 24 * 60 * 60
+
         description "A convenience command that will repeatedly fetch pages of models until all are fetched"
 
         inputs do
