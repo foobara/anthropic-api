@@ -1,6 +1,7 @@
 RSpec.describe Foobara::Ai::AnthropicApi::ListModels do
   before do
     FileUtils.rm_f("tmp/cached_command/foobara/ai/anthropic_api/list_models.json")
+    Foobara::CachedCommand.cache.clear
   end
 
   let(:inputs) do

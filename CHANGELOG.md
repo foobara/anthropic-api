@@ -1,3 +1,8 @@
+## [0.0.8] - 2025-02-19
+
+- Cache the list of models in ListModels
+- Load valid models at boot time into ModelEnum
+
 ## [0.0.7] - 2025-02-18
 
 - Add a ModelEnum and update list of models

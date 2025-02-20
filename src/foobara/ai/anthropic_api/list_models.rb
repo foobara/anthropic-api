@@ -1,4 +1,4 @@
-require_relative "base_command"
+require_relative "get_page_of_models"
 require "foobara/cached_command"
 
 module Foobara

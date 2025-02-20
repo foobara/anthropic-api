@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    foobara-anthropic-api (0.0.7)
+    foobara-anthropic-api (0.0.8)
       foobara-cached-command
       foobara-http-api-command
 
