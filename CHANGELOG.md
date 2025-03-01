@@ -1,3 +1,7 @@
+## [0.0.9] - 2025-03-01
+
+- Rename :model to :model_enum to avoid collision with Model in filesystems that are case-insensitive
+
 ## [0.0.8] - 2025-02-19
 
 - Cache the list of models in ListModels

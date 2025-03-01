@@ -7,7 +7,7 @@ module Foobara
         model_list = ListModels.run!.map(&:id).sort
         ModelEnum = Foobara::Enumerated.make_module(model_list)
 
-        AnthropicApi.foobara_register_type(:model, :string, one_of: ModelEnum)
+        AnthropicApi.foobara_register_type(:model_enum, :string, one_of: ModelEnum)
       end
     end
   end

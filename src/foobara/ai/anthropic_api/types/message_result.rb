@@ -9,7 +9,7 @@ module Foobara
           attributes do
             content [Content]
             id :string, :required
-            model :model, :required
+            model :model_enum, :required
             role :role, :required
             stop_reason :string, :required, one_of: %w[end_turn max_tokens stop_sequence]
             stop_sequence :string, :allow_nil

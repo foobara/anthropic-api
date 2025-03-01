@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    foobara-anthropic-api (0.0.8)
+    foobara-anthropic-api (0.0.9)
       foobara-cached-command
       foobara-http-api-command
 
@@ -22,15 +22,17 @@ GEM
     docile (1.4.1)
     dotenv (3.1.7)
     ffi (1.17.1-x86_64-linux-gnu)
-    foobara (0.0.57)
+    foobara (0.0.68)
       bigdecimal
+      foobara-lru-cache
       foobara-util
     foobara-cached-command (0.0.2)
       foobara
     foobara-dotenv-loader (0.0.2)
       dotenv
-    foobara-http-api-command (0.0.6)
+    foobara-http-api-command (0.0.7)
       foobara
+    foobara-lru-cache (0.0.2)
     foobara-rubocop-rules (0.0.7)
       rubocop
       rubocop-rspec
@@ -104,7 +106,7 @@ GEM
       diff-lcs (>= 1.2.0, < 2.0)
       rspec-support (~> 3.13.0)
     rspec-support (3.13.2)
-    rubocop (1.72.2)
+    rubocop (1.73.1)
       json (~> 2.3)
       language_server-protocol (~> 3.17.0.2)
       lint_roller (~> 1.1.0)
@@ -115,7 +117,7 @@ GEM
       rubocop-ast (>= 1.38.0, < 2.0)
       ruby-progressbar (~> 1.7)
       unicode-display_width (>= 2.4.0, < 4.0)
-    rubocop-ast (1.38.0)
+    rubocop-ast (1.38.1)
       parser (>= 3.3.1.0)
     rubocop-rake (0.7.1)
       lint_roller (~> 1.1)
