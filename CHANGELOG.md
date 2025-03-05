@@ -1,3 +1,7 @@
+## [0.0.10] - 2025-03-04
+
+- Fix bug where system prompt is not properly sent up to Anthropic
+
 ## [0.0.9] - 2025-03-01
 
 - Rename :model to :model_enum to avoid collision with Model in filesystems that are case-insensitive

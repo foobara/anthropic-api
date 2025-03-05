@@ -5,8 +5,9 @@ http_interactions:
     uri: https://api.anthropic.com/v1/messages
     body:
       encoding: UTF-8
-      string: '{"model":"claude-3-5-sonnet-20240620","max_tokens":1024,"messages":[{"role":"user","content":"What
-        is the PH of honey?"}]}'
+      string: '{"model":"claude-3-5-sonnet-20241022","max_tokens":1024,"messages":[{"role":"user","content":"What
+        is the PH of honey?"}],"system":"You are like a scientist that answers questions
+        very concisely and accurately."}'
     headers:
       Content-Type:
       - application/json
@@ -20,15 +21,13 @@ http_interactions:
       - "*/*"
       User-Agent:
       - Ruby
-      Host:
-      - api.anthropic.com
   response:
     status:
       code: 200
       message: OK
     headers:
       Date:
-      - Mon, 17 Feb 2025 16:25:53 GMT
+      - Wed, 05 Mar 2025 00:31:27 GMT
       Content-Type:
       - application/json
       Transfer-Encoding:
@@ -40,27 +39,27 @@ http_interactions:
       Anthropic-Ratelimit-Requests-Remaining:
       - '49'
       Anthropic-Ratelimit-Requests-Reset:
-      - '2025-02-17T16:25:51Z'
+      - '2025-03-05T00:31:26Z'
       Anthropic-Ratelimit-Input-Tokens-Limit:
       - '40000'
       Anthropic-Ratelimit-Input-Tokens-Remaining:
       - '40000'
       Anthropic-Ratelimit-Input-Tokens-Reset:
-      - '2025-02-17T16:25:50Z'
+      - '2025-03-05T00:31:25Z'
       Anthropic-Ratelimit-Output-Tokens-Limit:
       - '8000'
       Anthropic-Ratelimit-Output-Tokens-Remaining:
       - '8000'
       Anthropic-Ratelimit-Output-Tokens-Reset:
-      - '2025-02-17T16:25:53Z'
+      - '2025-03-05T00:31:27Z'
       Anthropic-Ratelimit-Tokens-Limit:
       - '48000'
       Anthropic-Ratelimit-Tokens-Remaining:
       - '48000'
       Anthropic-Ratelimit-Tokens-Reset:
-      - '2025-02-17T16:25:50Z'
+      - '2025-03-05T00:31:25Z'
       Request-Id:
-      - req_01WqepQif8rXXdRad3gKVwnY
+      - req_01EcQj7BYTpKxafveo6hMvVo
       Anthropic-Organization-Id:
       - 7a8e3751-3b70-4f90-a3ce-07f57c9d0bfc
       Via:
@@ -72,21 +71,12 @@ http_interactions:
       Server:
       - cloudflare
       Cf-Ray:
-      - 913722b69eb122ea-SJC
+      - 91b582a7d89715a6-SJC
     body:
       encoding: ASCII-8BIT
-      string: '{"id":"msg_01PoLMxTWDpuxVEP27spPmAp","type":"message","role":"assistant","model":"claude-3-5-sonnet-20240620","content":[{"type":"text","text":"The
-        pH of honey typically ranges from 3.4 to 6.1, with an average of around 3.9.
-        This means that honey is generally acidic. The exact pH can vary depending
-        on several factors:\n\n1. Floral source: Different types of flowers produce
-        nectar with varying compositions, which affects the final pH of the honey.\n\n2.
-        Geographic location: Environmental factors can influence the pH of honey produced
-        in different regions.\n\n3. Processing methods: Some honey processing techniques
-        may slightly alter the pH.\n\n4. Storage conditions: The pH of honey can change
-        slightly over time, especially if not stored properly.\n\n5. Presence of enzymes
-        and organic acids: These naturally occurring compounds in honey contribute
-        to its acidity.\n\nIt''s worth noting that the low pH of honey, combined with
-        its high sugar content and other antimicrobial properties, contributes to
-        its ability to resist bacterial growth and act as a natural preservative."}],"stop_reason":"end_turn","stop_sequence":null,"usage":{"input_tokens":15,"cache_creation_input_tokens":0,"cache_read_input_tokens":0,"output_tokens":202}}'
-  recorded_at: Mon, 17 Feb 2025 16:25:53 GMT
+      string: '{"id":"msg_015YRGXNDZucnjdVUUoBttyc","type":"message","role":"assistant","model":"claude-3-5-sonnet-20241022","content":[{"type":"text","text":"Honey
+        typically has a pH between 3.4 and 6.1, with an average pH of around 3.9.
+        This acidic pH is primarily due to the presence of organic acids such as gluconic
+        acid, which is produced by glucose oxidase during honey formation."}],"stop_reason":"end_turn","stop_sequence":null,"usage":{"input_tokens":30,"cache_creation_input_tokens":0,"cache_read_input_tokens":0,"output_tokens":62}}'
+  recorded_at: Wed, 05 Mar 2025 00:31:27 GMT
 recorded_with: VCR 6.3.1

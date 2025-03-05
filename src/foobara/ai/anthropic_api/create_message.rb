@@ -17,7 +17,13 @@ module Foobara
         result Types::MessageResult
 
         def build_request_body
-          self.request_body = { model:, max_tokens:, messages: }
+          body = { model:, max_tokens:, messages: }
+
+          if inputs[:system]
+            body[:system] = inputs[:system]
+          end
+
+          self.request_body = body
         end
 
         def build_result
