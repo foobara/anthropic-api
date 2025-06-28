@@ -11,9 +11,9 @@ module Foobara
             id :string, :required
             model :model_enum, :required
             role :role, :required
-            stop_reason :string, :required, one_of: %w[end_turn max_tokens stop_sequence]
+            stop_reason :string, :required, one_of: ["end_turn", "max_tokens", "stop_sequence"]
             stop_sequence :string, :allow_nil
-            type :string, :required, one_of: %w[message]
+            type :string, :required, one_of: ["message"]
             usage Usage
           end
         end

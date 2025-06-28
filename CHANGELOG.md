@@ -1,3 +1,7 @@
+## [0.0.11] - 2025-06-27
+
+- Add temperature input to CreateMessage
+
 ## [0.0.10] - 2025-03-04
 
 - Fix bug where system prompt is not properly sent up to Anthropic

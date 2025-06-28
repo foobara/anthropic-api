@@ -4,7 +4,7 @@ module Foobara
       module Types
         class Message < Foobara::Model
           attributes do
-            role :string, one_of: %w[assistant user]
+            role :string, one_of: ["assistant", "user"]
             content :string
           end
         end

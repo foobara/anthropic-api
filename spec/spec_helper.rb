@@ -25,3 +25,4 @@ require "foobara/spec_helpers/all"
 VCR.use_cassette("list_models", record: :none) do
   require_relative "../boot/finish"
 end
+# raise "Just rerecording the list_models cassette, no need to proceed"

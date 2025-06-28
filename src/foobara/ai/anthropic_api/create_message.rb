@@ -12,12 +12,13 @@ module Foobara
           max_tokens :integer, default: 1024
           model :model_enum, default: Types::ModelEnum::CLAUDE_3_5_SONNET_20241022
           messages [Types::Message]
+          temperature :float
         end
 
         result Types::MessageResult
 
         def build_request_body
-          body = { model:, max_tokens:, messages: }
+          body = { model:, max_tokens:, messages:, temperature: }
 
           if inputs[:system]
             body[:system] = inputs[:system]

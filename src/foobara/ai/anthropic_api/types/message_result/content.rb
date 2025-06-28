@@ -6,7 +6,7 @@ module Foobara
           class Content < Foobara::Model
             attributes do
               text :string, :required
-              type :string, :required, one_of: %w[text]
+              type :string, :required, one_of: ["text"]
             end
           end
         end
