@@ -16,6 +16,10 @@ module Foobara
         def api_token
           BaseCommand.api_token
         end
+
+        def default_llm_model
+          :"claude-3-7-sonnet-20250219"
+        end
       end
     end
   end

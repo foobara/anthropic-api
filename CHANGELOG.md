@@ -1,3 +1,7 @@
+## [1.0.1] - 2025-07-09
+
+- Add .default_llm_model
+
 ## [1.0.0] - 2025-07-08
 
 - Retry with incremental/exponential backoff for 529s and 429s
