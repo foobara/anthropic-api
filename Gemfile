@@ -5,12 +5,14 @@ ruby Foobara::AnthropicApi::MINIMUM_RUBY_VERSION
 
 gemspec
 
-gem "foobara-dotenv-loader"
+# gem "foobara", path: "../foobara"
+
+gem "foobara-dotenv-loader", "< 2.0.0"
 
 gem "rake"
 
 group :development do
-  gem "foobara-rubocop-rules"
+  gem "foobara-rubocop-rules", ">= 1.0.0"
   gem "guard-rspec"
   gem "rubocop-rake"
   gem "rubocop-rspec"
@@ -22,7 +24,7 @@ group :development, :test do
 end
 
 group :test do
-  gem "foobara-spec-helpers"
+  gem "foobara-spec-helpers", "< 2.0.0"
   gem "rspec"
   gem "rspec-its"
   gem "ruby-prof"
