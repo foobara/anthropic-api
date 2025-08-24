@@ -4,6 +4,8 @@ module Foobara
   module Ai
     module AnthropicApi
       class BaseCommand < Foobara::Command
+        abstract
+
         class << self
           attr_accessor :api_token
         end

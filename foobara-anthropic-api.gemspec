@@ -21,7 +21,7 @@ Gem::Specification.new do |spec|
     "LICENSE.txt"
   ]
 
-  spec.add_dependency "foobara", ">= 0.1.1", "< 2.0.0"
+  spec.add_dependency "foobara", ">= 0.1.3", "< 2.0.0"
   spec.add_dependency "foobara-cached-command", "< 2.0.0"
   spec.add_dependency "foobara-http-api-command", "< 2.0.0"
 

@@ -1,3 +1,7 @@
+## [1.0.3] - 2025-08-24
+
+- Mark BaseCommand as abstract
+
 ## [1.0.2] - 2025-08-24
 
 - Fix bug where temperature is unintentionally required
