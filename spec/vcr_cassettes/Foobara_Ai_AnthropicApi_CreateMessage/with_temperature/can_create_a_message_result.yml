@@ -1,0 +1,86 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://api.anthropic.com/v1/messages
+    body:
+      encoding: UTF-8
+      string: '{"model":"claude-3-5-sonnet-20241022","max_tokens":1024,"messages":[{"role":"user","content":"What
+        is the PH of honey?"}],"temperature":0.5,"system":"You are like a scientist
+        that answers questions very concisely and accurately."}'
+    headers:
+      Content-Type:
+      - application/json
+      X-Api-Key:
+      - "<ANTHROPIC_API_KEY>"
+      Anthropic-Version:
+      - '2023-06-01'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 24 Aug 2025 17:56:55 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Anthropic-Ratelimit-Input-Tokens-Limit:
+      - '160000'
+      Anthropic-Ratelimit-Input-Tokens-Remaining:
+      - '160000'
+      Anthropic-Ratelimit-Input-Tokens-Reset:
+      - '2025-08-24T17:56:54Z'
+      Anthropic-Ratelimit-Output-Tokens-Limit:
+      - '32000'
+      Anthropic-Ratelimit-Output-Tokens-Remaining:
+      - '32000'
+      Anthropic-Ratelimit-Output-Tokens-Reset:
+      - '2025-08-24T17:56:55Z'
+      Anthropic-Ratelimit-Requests-Limit:
+      - '2000'
+      Anthropic-Ratelimit-Requests-Remaining:
+      - '1999'
+      Anthropic-Ratelimit-Requests-Reset:
+      - '2025-08-24T17:56:54Z'
+      Anthropic-Ratelimit-Tokens-Limit:
+      - '192000'
+      Anthropic-Ratelimit-Tokens-Remaining:
+      - '192000'
+      Anthropic-Ratelimit-Tokens-Reset:
+      - '2025-08-24T17:56:54Z'
+      Request-Id:
+      - req_011CSSy25qrpxE12MHbvJRxR
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      Anthropic-Organization-Id:
+      - 7a8e3751-3b70-4f90-a3ce-07f57c9d0bfc
+      X-Envoy-Upstream-Service-Time:
+      - '1722'
+      Via:
+      - 1.1 google
+      Cf-Cache-Status:
+      - DYNAMIC
+      X-Robots-Tag:
+      - none
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 9744ba9d2c962393-SJC
+    body:
+      encoding: ASCII-8BIT
+      string: '{"id":"msg_01MuhxxQR29sX2Hg8EmbqZNg","type":"message","role":"assistant","model":"claude-3-5-sonnet-20241022","content":[{"type":"text","text":"Honey
+        typically has a pH between 3.4 and 6.1, with an average pH of around 3.9.
+        This acidic pH is primarily due to the presence of organic acids, particularly
+        gluconic acid, which is produced by glucose oxidase during honey formation."}],"stop_reason":"end_turn","stop_sequence":null,"usage":{"input_tokens":30,"cache_creation_input_tokens":0,"cache_read_input_tokens":0,"cache_creation":{"ephemeral_5m_input_tokens":0,"ephemeral_1h_input_tokens":0},"output_tokens":62,"service_tier":"standard"}}'
+  recorded_at: Sun, 24 Aug 2025 17:56:55 GMT
+recorded_with: VCR 6.3.1

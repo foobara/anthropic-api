@@ -18,10 +18,16 @@ module Foobara
         result Types::MessageResult
 
         def build_request_body
-          body = { model:, max_tokens:, messages:, temperature: }
+          body = { model:, max_tokens:, messages: }
 
-          if inputs[:system]
-            body[:system] = inputs[:system]
+          temp = inputs[:temperature]
+          if temp
+            body[:temperature] = temp
+          end
+
+          sys = inputs[:system]
+          if sys
+            body[:system] = sys
           end
 
           self.request_body = body

@@ -27,4 +27,17 @@ RSpec.describe Foobara::Ai::AnthropicApi::CreateMessage do
     expect(result).to be_a(Foobara::Ai::AnthropicApi::Types::MessageResult)
     expect(result.content.first.text).to match(/pH.*\d+\.\d+ (and|to) \d+\.\d+/i)
   end
+
+  context "with temperature" do
+    let(:inputs) do
+      super().merge(temperature:)
+    end
+    let(:temperature) { 0.5 }
+
+    it "can create a message result", vcr: { record: :none } do
+      expect(outcome).to be_success
+      expect(result).to be_a(Foobara::Ai::AnthropicApi::Types::MessageResult)
+      expect(result.content.first.text).to match(/pH.*\d+\.\d+ (and|to) \d+\.\d+/i)
+    end
+  end
 end
