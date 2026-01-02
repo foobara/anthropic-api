@@ -25,7 +25,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Wed, 29 Oct 2025 00:38:43 GMT
+      - Fri, 02 Jan 2026 14:18:00 GMT
       Content-Type:
       - application/json
       Transfer-Encoding:
@@ -33,26 +33,25 @@ http_interactions:
       Connection:
       - keep-alive
       Request-Id:
-      - req_011CUaZEndYmw5p3B1Kg3mBT
+      - req_011CWihHtE93FWQZpLZ6dszD
       Strict-Transport-Security:
       - max-age=31536000; includeSubDomains; preload
       Anthropic-Organization-Id:
       - 7a8e3751-3b70-4f90-a3ce-07f57c9d0bfc
+      Server:
+      - cloudflare
       X-Envoy-Upstream-Service-Time:
-      - '76'
-      Via:
-      - 1.1 google
+      - '38'
       Cf-Cache-Status:
       - DYNAMIC
       X-Robots-Tag:
       - none
-      Server:
-      - cloudflare
       Cf-Ray:
-      - 995e9c96cd1e6804-SJC
+      - 9b7ae2169e8acfe5-SJC
     body:
       encoding: ASCII-8BIT
-      string: '{"data":[{"type":"model","id":"claude-haiku-4-5-20251001","display_name":"Claude
+      string: '{"data":[{"type":"model","id":"claude-opus-4-5-20251101","display_name":"Claude
+        Opus 4.5","created_at":"2025-11-24T00:00:00Z"},{"type":"model","id":"claude-haiku-4-5-20251001","display_name":"Claude
         Haiku 4.5","created_at":"2025-10-15T00:00:00Z"},{"type":"model","id":"claude-sonnet-4-5-20250929","display_name":"Claude
         Sonnet 4.5","created_at":"2025-09-29T00:00:00Z"},{"type":"model","id":"claude-opus-4-1-20250805","display_name":"Claude
         Opus 4.1","created_at":"2025-08-05T00:00:00Z"},{"type":"model","id":"claude-opus-4-20250514","display_name":"Claude
@@ -61,6 +60,6 @@ http_interactions:
         Sonnet 3.7","created_at":"2025-02-24T00:00:00Z"},{"type":"model","id":"claude-3-5-haiku-20241022","display_name":"Claude
         Haiku 3.5","created_at":"2024-10-22T00:00:00Z"},{"type":"model","id":"claude-3-haiku-20240307","display_name":"Claude
         Haiku 3","created_at":"2024-03-07T00:00:00Z"},{"type":"model","id":"claude-3-opus-20240229","display_name":"Claude
-        Opus 3","created_at":"2024-02-29T00:00:00Z"}],"has_more":false,"first_id":"claude-haiku-4-5-20251001","last_id":"claude-3-opus-20240229"}'
-  recorded_at: Wed, 29 Oct 2025 00:38:42 GMT
-recorded_with: VCR 6.3.1
+        Opus 3","created_at":"2024-02-29T00:00:00Z"}],"has_more":false,"first_id":"claude-opus-4-5-20251101","last_id":"claude-3-opus-20240229"}'
+  recorded_at: Fri, 02 Jan 2026 14:18:00 GMT
+recorded_with: VCR 6.4.0

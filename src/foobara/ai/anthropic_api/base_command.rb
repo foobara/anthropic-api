@@ -15,7 +15,7 @@ module Foobara
         base_url "https://api.anthropic.com/v1"
 
         inputs do
-          api_token :string
+          api_token :string, :sensitive_exposed
           anthropic_version :string
         end
 

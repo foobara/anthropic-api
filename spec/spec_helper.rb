@@ -22,6 +22,9 @@ Dir["#{__dir__}/support/**/*.rb"].each { |f| require f }
 
 require "foobara/spec_helpers/all"
 
+# To rerecord this cassette, delete list_models.yml, change record: :none to record: :once,
+# uncomment the raise below, and delete tmp/
+# then run the test suite. And of course comment back out the raise when done.
 VCR.use_cassette("list_models", record: :none) do
   require_relative "../boot/finish"
 end

@@ -10,7 +10,7 @@ module Foobara
         add_inputs do
           system :string
           max_tokens :integer, default: 1024
-          model :model_enum, default: Types::ModelEnum::CLAUDE_3_7_SONNET_20250219
+          model :model_enum, default: AnthropicApi.default_llm_model
           messages [Types::Message]
           temperature :float
         end

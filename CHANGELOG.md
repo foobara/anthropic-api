@@ -1,3 +1,11 @@
+## [1.0.5] - 2026-01-02
+
+- Bump default to sonnet 4.5
+
+## [1.0.4] - 2025-10-28
+
+- Bump default to sonnet 3.7
+
 ## [1.0.3] - 2025-08-24
 
 - Mark BaseCommand as abstract

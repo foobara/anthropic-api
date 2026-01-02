@@ -18,7 +18,7 @@ module Foobara
         end
 
         def default_llm_model
-          :"claude-3-7-sonnet-20250219"
+          Types::ModelEnum::CLAUDE_SONNET_4_5_20250929
         end
       end
     end

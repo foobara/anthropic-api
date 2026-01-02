@@ -5,7 +5,7 @@ http_interactions:
     uri: https://api.anthropic.com/v1/messages
     body:
       encoding: UTF-8
-      string: '{"model":"claude-3-7-sonnet-20250219","max_tokens":1024,"messages":[{"role":"user","content":"What
+      string: '{"model":"claude-sonnet-4-5-20250929","max_tokens":1024,"messages":[{"role":"user","content":"What
         is the PH of honey?"}],"temperature":0.5,"system":"You are like a scientist
         that answers questions very concisely and accurately."}'
     headers:
@@ -27,7 +27,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Wed, 29 Oct 2025 00:59:38 GMT
+      - Fri, 02 Jan 2026 14:25:18 GMT
       Content-Type:
       - application/json
       Transfer-Encoding:
@@ -35,52 +35,52 @@ http_interactions:
       Connection:
       - keep-alive
       Anthropic-Ratelimit-Input-Tokens-Limit:
-      - '80000'
+      - '2000000'
       Anthropic-Ratelimit-Input-Tokens-Remaining:
-      - '80000'
+      - '2000000'
       Anthropic-Ratelimit-Input-Tokens-Reset:
-      - '2025-10-29T00:59:37Z'
+      - '2026-01-02T14:25:16Z'
       Anthropic-Ratelimit-Output-Tokens-Limit:
-      - '32000'
+      - '400000'
       Anthropic-Ratelimit-Output-Tokens-Remaining:
-      - '32000'
+      - '400000'
       Anthropic-Ratelimit-Output-Tokens-Reset:
-      - '2025-10-29T00:59:38Z'
+      - '2026-01-02T14:25:18Z'
       Anthropic-Ratelimit-Requests-Limit:
-      - '2000'
+      - '4000'
       Anthropic-Ratelimit-Requests-Remaining:
-      - '1999'
+      - '3999'
       Anthropic-Ratelimit-Requests-Reset:
-      - '2025-10-29T00:59:35Z'
+      - '2026-01-02T14:25:14Z'
       Anthropic-Ratelimit-Tokens-Limit:
-      - '112000'
+      - '2400000'
       Anthropic-Ratelimit-Tokens-Remaining:
-      - '112000'
+      - '2400000'
       Anthropic-Ratelimit-Tokens-Reset:
-      - '2025-10-29T00:59:37Z'
+      - '2026-01-02T14:25:16Z'
       Request-Id:
-      - req_011CUaaq8uGH9e66AQsQMN5m
+      - req_011CWihqsLwapw2NZwimoqoK
       Strict-Transport-Security:
       - max-age=31536000; includeSubDomains; preload
       Anthropic-Organization-Id:
       - 7a8e3751-3b70-4f90-a3ce-07f57c9d0bfc
+      Server:
+      - cloudflare
       X-Envoy-Upstream-Service-Time:
-      - '2140'
-      Via:
-      - 1.1 google
+      - '4254'
       Cf-Cache-Status:
       - DYNAMIC
       X-Robots-Tag:
       - none
-      Server:
-      - cloudflare
       Cf-Ray:
-      - 995ebb2cf85d17d8-SJC
+      - 9b7aecae7e2b9100-SJC
     body:
       encoding: ASCII-8BIT
-      string: '{"model":"claude-3-7-sonnet-20250219","id":"msg_01CAskMQxWeSntfJuKm8ekQp","type":"message","role":"assistant","content":[{"type":"text","text":"Honey
-        typically has a pH between 3.4 and 6.1, with an average of about 3.9. The
-        acidity varies depending on the floral source, geographic origin, and processing
-        methods."}],"stop_reason":"end_turn","stop_sequence":null,"usage":{"input_tokens":30,"cache_creation_input_tokens":0,"cache_read_input_tokens":0,"cache_creation":{"ephemeral_5m_input_tokens":0,"ephemeral_1h_input_tokens":0},"output_tokens":49,"service_tier":"standard"}}'
-  recorded_at: Wed, 29 Oct 2025 00:59:37 GMT
-recorded_with: VCR 6.3.1
+      string: '{"model":"claude-sonnet-4-5-20250929","id":"msg_01VwcpCZ5UmKr9mXu9PfLKPD","type":"message","role":"assistant","content":[{"type":"text","text":"The
+        pH of honey typically ranges from **3.4 to 6.1**, with most varieties falling
+        between **3.5 and 4.5**.\n\nThis acidity is due to organic acids present in
+        honey, primarily gluconic acid, which is produced when the enzyme glucose
+        oxidase (added by bees) breaks down glucose. This acidic nature helps honey
+        resist microbial growth and contributes to its long shelf life."}],"stop_reason":"end_turn","stop_sequence":null,"usage":{"input_tokens":30,"cache_creation_input_tokens":0,"cache_read_input_tokens":0,"cache_creation":{"ephemeral_5m_input_tokens":0,"ephemeral_1h_input_tokens":0},"output_tokens":94,"service_tier":"standard"}}'
+  recorded_at: Fri, 02 Jan 2026 14:25:18 GMT
+recorded_with: VCR 6.4.0
