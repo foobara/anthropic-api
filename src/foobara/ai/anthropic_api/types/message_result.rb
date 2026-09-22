@@ -23,7 +23,7 @@ module Foobara
           end
 
           def text
-            content.find { it.type == "text" }.text
+            content.rfind { it.type == "text" }.text
           end
         end
       end

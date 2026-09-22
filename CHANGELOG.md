@@ -1,3 +1,7 @@
+## [1.0.8] - 2026-09-22
+
+- Consider the last "text" type content to be MessageResult#text
+
 ## [1.0.7] - 2026-09-22
 
 - Handle "thinking" message content type

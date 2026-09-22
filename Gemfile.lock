@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    foobara-anthropic-api (1.0.7)
+    foobara-anthropic-api (1.0.8)
       foobara (>= 0.4.1, < 2.0.0)
       foobara-cached-command (< 2.0.0)
       foobara-http-api-command (< 2.0.0)
@@ -236,7 +236,7 @@ CHECKSUMS
   ffi (1.17.4-x86_64-linux-gnu) sha256=9d3db14c2eae074b382fa9c083fe95aec6e0a1451da249eab096c34002bc752d
   ffi (1.17.4-x86_64-linux-musl) sha256=3fdf9888483de005f8ef8d1cf2d3b20d86626af206cbf780f6a6a12439a9c49e
   foobara (0.6.4) sha256=52446b9e83ad0ec26b49066579936755bd30335a9308e0e16388624ebe9fd810
-  foobara-anthropic-api (1.0.7)
+  foobara-anthropic-api (1.0.8)
   foobara-cached-command (1.0.1) sha256=dc322ab083de76b5ca6a8e2942578a78621d0b04c2e787a3818ee7afc905ac5b
   foobara-dotenv-loader (0.0.3) sha256=04ad7c088dbcd1b81fc1bab01f4016b1237db1745753785700cb854180b09792
   foobara-http-api-command (0.0.9) sha256=516ef89c6df462c7fda789140f9354ac7d04c6b9bf3aa696e98a99700729c531
