@@ -25,7 +25,11 @@ module Foobara
         end
 
         def build_result
-          Types::PageOfModels.new(response_body, ignore_unexpected_attributes: true)
+          Types::PageOfModels.new(
+            response_body,
+            # Set this to false to discover new attributes
+            ignore_unexpected_attributes: true
+          )
         end
       end
     end

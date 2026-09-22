@@ -12,18 +12,12 @@ module Foobara
           max_tokens :integer, default: 1024
           model :model_enum, default: AnthropicApi.default_llm_model
           messages [Types::Message]
-          temperature :float
         end
 
         result Types::MessageResult
 
         def build_request_body
           body = { model:, max_tokens:, messages: }
-
-          temp = inputs[:temperature]
-          if temp
-            body[:temperature] = temp
-          end
 
           sys = inputs[:system]
           if sys
@@ -34,7 +28,11 @@ module Foobara
         end
 
         def build_result
-          Types::MessageResult.new(response_body, ignore_unexpected_attributes: true)
+          Types::MessageResult.new(
+            response_body,
+            # Set this to false to discover new attributes
+            ignore_unexpected_attributes: true
+          )
         end
       end
     end
