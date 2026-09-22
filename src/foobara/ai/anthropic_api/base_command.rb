@@ -47,16 +47,16 @@ module Foobara
           case response.code
           when "429"
             # TODO: figure out how to test this code path
-            # :nocov:
+            # simplecov:disable
             sleep 2 ** failures
             issue_http_request(failures + 1)
-            # :nocov:
+            # simplecov:enable
           when "529"
-            # :nocov:
+            # simplecov:disable
             failures += 1
             sleep failures
             issue_http_request(failures)
-            # :nocov:
+            # simplecov:enable
           end
         end
       end

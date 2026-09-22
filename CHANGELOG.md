@@ -1,3 +1,9 @@
+## [1.0.6] - 2026-09-21
+
+- Remove temperature input as Anthropic seems to have abandoned it and gives 400 despite being "deprecated"
+- Protect against newly added attributes
+- Add some new attributes to the models
+
 ## [1.0.5] - 2026-01-02
 
 - Bump default to sonnet 4.5

@@ -15,6 +15,11 @@ module Foobara
             stop_sequence :string, :allow_nil
             type :string, :required, one_of: ["message"]
             usage Usage
+
+            # TODO: type this, no clue what it is (but it can definitely be null)
+            stop_details :duck
+            # TODO: type this, no clue what it is (but it can definitely be null)
+            container :duck
           end
         end
       end
