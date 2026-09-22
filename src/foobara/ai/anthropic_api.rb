@@ -17,9 +17,7 @@ module Foobara
           BaseCommand.api_token
         end
 
-        def default_llm_model
-          Types::ModelEnum::CLAUDE_SONNET_4_5_20250929
-        end
+        def default_llm_model = Types::ModelEnum::CLAUDE_SONNET_5
       end
     end
   end

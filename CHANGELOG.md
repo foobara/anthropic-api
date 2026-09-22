@@ -1,3 +1,7 @@
+## [1.0.7] - 2026-09-22
+
+- Handle "thinking" message content type
+
 ## [1.0.6] - 2026-09-21
 
 - Remove temperature input as Anthropic seems to have abandoned it and gives 400 despite being "deprecated"

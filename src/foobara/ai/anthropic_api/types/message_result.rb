@@ -21,6 +21,10 @@ module Foobara
             # TODO: type this, no clue what it is (but it can definitely be null)
             container :duck
           end
+
+          def text
+            content.find { it.type == "text" }.text
+          end
         end
       end
     end

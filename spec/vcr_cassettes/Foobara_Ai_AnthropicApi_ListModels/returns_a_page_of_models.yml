@@ -25,7 +25,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Tue, 22 Sep 2026 01:42:35 GMT
+      - Tue, 22 Sep 2026 15:37:42 GMT
       Content-Type:
       - application/json
       Transfer-Encoding:
@@ -33,7 +33,7 @@ http_interactions:
       Connection:
       - keep-alive
       Request-Id:
-      - req_011CfHdRehSQqteQL1QpoT8H
+      - req_011CfJj7DhEMpUy2kbtkPkQR
       Strict-Transport-Security:
       - max-age=31536000; includeSubDomains; preload
       Anthropic-Organization-Id:
@@ -44,22 +44,22 @@ http_interactions:
       - cloudflare
       Vary:
       - Accept-Encoding
-      Content-Security-Policy:
-      - default-src 'none'; frame-ancestors 'none'
       Server-Timing:
-      - x-originResponse;dur=112
-      Cf-Cache-Status:
-      - DYNAMIC
+      - x-originResponse;dur=248
       X-Robots-Tag:
       - none
+      Content-Security-Policy:
+      - default-src 'none'; frame-ancestors 'none'
+      Cf-Cache-Status:
+      - DYNAMIC
       Cf-Ray:
-      - a3ed9d291e4c7c8f-SJC
+      - a3f26476ecb7138a-SJC
     body:
       encoding: ASCII-8BIT
       string: '{"data":[{"type":"model","id":"claude-fable-5-1","display_name":"Claude
         Fable 5.1","created_at":"2026-08-28T00:00:00Z","max_input_tokens":1000000,"max_tokens":128000,"capabilities":{"batch":{"supported":true},"citations":{"supported":true},"code_execution":{"supported":true},"context_management":{"supported":true,"clear_tool_uses_20250919":{"supported":true},"clear_thinking_20251015":{"supported":true},"compact_20260112":{"supported":true}},"effort":{"supported":true,"low":{"supported":true},"medium":{"supported":true},"high":{"supported":true},"xhigh":{"supported":true},"max":{"supported":true}},"image_input":{"supported":true},"pdf_input":{"supported":true},"structured_outputs":{"supported":true},"thinking":{"supported":true,"types":{"enabled":{"supported":false},"adaptive":{"supported":true}}}}},{"type":"model","id":"claude-opus-5","display_name":"Claude
         Opus 5","created_at":"2026-07-24T00:00:00Z","max_input_tokens":1000000,"max_tokens":128000,"capabilities":{"batch":{"supported":true},"citations":{"supported":true},"code_execution":{"supported":true},"context_management":{"supported":true,"clear_tool_uses_20250919":{"supported":true},"clear_thinking_20251015":{"supported":true},"compact_20260112":{"supported":true}},"effort":{"supported":true,"low":{"supported":true},"medium":{"supported":true},"high":{"supported":true},"xhigh":{"supported":true},"max":{"supported":true}},"image_input":{"supported":true},"pdf_input":{"supported":true},"structured_outputs":{"supported":true},"thinking":{"supported":true,"types":{"enabled":{"supported":false},"adaptive":{"supported":true}}}}}],"has_more":true,"first_id":"claude-fable-5-1","last_id":"claude-opus-5"}'
-  recorded_at: Tue, 22 Sep 2026 01:42:35 GMT
+  recorded_at: Tue, 22 Sep 2026 15:37:42 GMT
 - request:
     method: get
     uri: https://api.anthropic.com/v1/models?after_id=claude-opus-5&limit=2
@@ -85,7 +85,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Tue, 22 Sep 2026 01:42:36 GMT
+      - Tue, 22 Sep 2026 15:37:42 GMT
       Content-Type:
       - application/json
       Transfer-Encoding:
@@ -93,7 +93,7 @@ http_interactions:
       Connection:
       - keep-alive
       Request-Id:
-      - req_011CfHdRg4HzkxRgPNuqmvLn
+      - req_011CfJj7FZ6jtGe8KcQKkoiN
       Strict-Transport-Security:
       - max-age=31536000; includeSubDomains; preload
       Anthropic-Organization-Id:
@@ -104,22 +104,22 @@ http_interactions:
       - cloudflare
       Vary:
       - Accept-Encoding
-      Server-Timing:
-      - x-originResponse;dur=58
-      X-Robots-Tag:
-      - none
       Content-Security-Policy:
       - default-src 'none'; frame-ancestors 'none'
+      Server-Timing:
+      - x-originResponse;dur=82
       Cf-Cache-Status:
       - DYNAMIC
+      X-Robots-Tag:
+      - none
       Cf-Ray:
-      - a3ed9d2b2f1dee01-SJC
+      - a3f26479ccceebe7-SJC
     body:
       encoding: ASCII-8BIT
       string: '{"data":[{"type":"model","id":"claude-sonnet-5","display_name":"Claude
         Sonnet 5","created_at":"2026-06-29T00:00:00Z","max_input_tokens":1000000,"max_tokens":128000,"capabilities":{"batch":{"supported":true},"citations":{"supported":true},"code_execution":{"supported":true},"context_management":{"supported":true,"clear_tool_uses_20250919":{"supported":true},"clear_thinking_20251015":{"supported":true},"compact_20260112":{"supported":true}},"effort":{"supported":true,"low":{"supported":true},"medium":{"supported":true},"high":{"supported":true},"xhigh":{"supported":true},"max":{"supported":true}},"image_input":{"supported":true},"pdf_input":{"supported":true},"structured_outputs":{"supported":true},"thinking":{"supported":true,"types":{"enabled":{"supported":false},"adaptive":{"supported":true}}}}},{"type":"model","id":"claude-fable-5","display_name":"Claude
         Fable 5","created_at":"2026-06-07T00:00:00Z","max_input_tokens":1000000,"max_tokens":128000,"capabilities":{"batch":{"supported":true},"citations":{"supported":true},"code_execution":{"supported":true},"context_management":{"supported":true,"clear_tool_uses_20250919":{"supported":true},"clear_thinking_20251015":{"supported":true},"compact_20260112":{"supported":true}},"effort":{"supported":true,"low":{"supported":true},"medium":{"supported":true},"high":{"supported":true},"xhigh":{"supported":true},"max":{"supported":true}},"image_input":{"supported":true},"pdf_input":{"supported":true},"structured_outputs":{"supported":true},"thinking":{"supported":true,"types":{"enabled":{"supported":false},"adaptive":{"supported":true}}}}}],"has_more":true,"first_id":"claude-sonnet-5","last_id":"claude-fable-5"}'
-  recorded_at: Tue, 22 Sep 2026 01:42:36 GMT
+  recorded_at: Tue, 22 Sep 2026 15:37:42 GMT
 - request:
     method: get
     uri: https://api.anthropic.com/v1/models?after_id=claude-fable-5&limit=2
@@ -145,7 +145,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Tue, 22 Sep 2026 01:42:36 GMT
+      - Tue, 22 Sep 2026 15:37:43 GMT
       Content-Type:
       - application/json
       Transfer-Encoding:
@@ -153,7 +153,7 @@ http_interactions:
       Connection:
       - keep-alive
       Request-Id:
-      - req_011CfHdRhLSQhPJ2MnZRd5jo
+      - req_011CfJj7GsUdFk4pUVp8PhnQ
       Strict-Transport-Security:
       - max-age=31536000; includeSubDomains; preload
       Anthropic-Organization-Id:
@@ -164,22 +164,22 @@ http_interactions:
       - cloudflare
       Vary:
       - Accept-Encoding
-      Server-Timing:
-      - x-originResponse;dur=64
-      X-Robots-Tag:
-      - none
       Content-Security-Policy:
       - default-src 'none'; frame-ancestors 'none'
+      Server-Timing:
+      - x-originResponse;dur=70
       Cf-Cache-Status:
       - DYNAMIC
+      X-Robots-Tag:
+      - none
       Cf-Ray:
-      - a3ed9d2d0e68760e-SJC
+      - a3f2647bb9b3208c-SJC
     body:
       encoding: ASCII-8BIT
       string: '{"data":[{"type":"model","id":"claude-opus-4-8","display_name":"Claude
         Opus 4.8","created_at":"2026-05-28T00:00:00Z","max_input_tokens":1000000,"max_tokens":128000,"capabilities":{"batch":{"supported":true},"citations":{"supported":true},"code_execution":{"supported":true},"context_management":{"supported":true,"clear_tool_uses_20250919":{"supported":true},"clear_thinking_20251015":{"supported":true},"compact_20260112":{"supported":true}},"effort":{"supported":true,"low":{"supported":true},"medium":{"supported":true},"high":{"supported":true},"xhigh":{"supported":true},"max":{"supported":true}},"image_input":{"supported":true},"pdf_input":{"supported":true},"structured_outputs":{"supported":true},"thinking":{"supported":true,"types":{"enabled":{"supported":false},"adaptive":{"supported":true}}}}},{"type":"model","id":"claude-opus-4-7","display_name":"Claude
         Opus 4.7","created_at":"2026-04-14T00:00:00Z","max_input_tokens":1000000,"max_tokens":128000,"capabilities":{"batch":{"supported":true},"citations":{"supported":true},"code_execution":{"supported":true},"context_management":{"supported":true,"clear_tool_uses_20250919":{"supported":true},"clear_thinking_20251015":{"supported":true},"compact_20260112":{"supported":true}},"effort":{"supported":true,"low":{"supported":true},"medium":{"supported":true},"high":{"supported":true},"xhigh":{"supported":true},"max":{"supported":true}},"image_input":{"supported":true},"pdf_input":{"supported":true},"structured_outputs":{"supported":true},"thinking":{"supported":true,"types":{"enabled":{"supported":false},"adaptive":{"supported":true}}}}}],"has_more":true,"first_id":"claude-opus-4-8","last_id":"claude-opus-4-7"}'
-  recorded_at: Tue, 22 Sep 2026 01:42:36 GMT
+  recorded_at: Tue, 22 Sep 2026 15:37:43 GMT
 - request:
     method: get
     uri: https://api.anthropic.com/v1/models?after_id=claude-opus-4-7&limit=2
@@ -205,7 +205,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Tue, 22 Sep 2026 01:42:36 GMT
+      - Tue, 22 Sep 2026 15:37:43 GMT
       Content-Type:
       - application/json
       Transfer-Encoding:
@@ -213,7 +213,7 @@ http_interactions:
       Connection:
       - keep-alive
       Request-Id:
-      - req_011CfHdRimm2BmNi3j7mKFQw
+      - req_011CfJj7JP1Xgrn8NRtfpJ2c
       Strict-Transport-Security:
       - max-age=31536000; includeSubDomains; preload
       Anthropic-Organization-Id:
@@ -224,22 +224,22 @@ http_interactions:
       - cloudflare
       Vary:
       - Accept-Encoding
-      Content-Security-Policy:
-      - default-src 'none'; frame-ancestors 'none'
       Server-Timing:
-      - x-originResponse;dur=66
-      Cf-Cache-Status:
-      - DYNAMIC
+      - x-originResponse;dur=84
       X-Robots-Tag:
       - none
+      Content-Security-Policy:
+      - default-src 'none'; frame-ancestors 'none'
+      Cf-Cache-Status:
+      - DYNAMIC
       Cf-Ray:
-      - a3ed9d2f0f35f9cc-SJC
+      - a3f2647db8913ec8-SJC
     body:
       encoding: ASCII-8BIT
       string: '{"data":[{"type":"model","id":"claude-sonnet-4-6","display_name":"Claude
         Sonnet 4.6","created_at":"2026-02-17T00:00:00Z","max_input_tokens":1000000,"max_tokens":128000,"capabilities":{"batch":{"supported":true},"citations":{"supported":true},"code_execution":{"supported":true},"context_management":{"supported":true,"clear_tool_uses_20250919":{"supported":true},"clear_thinking_20251015":{"supported":true},"compact_20260112":{"supported":true}},"effort":{"supported":true,"low":{"supported":true},"medium":{"supported":true},"high":{"supported":true},"xhigh":{"supported":false},"max":{"supported":true}},"image_input":{"supported":true},"pdf_input":{"supported":true},"structured_outputs":{"supported":true},"thinking":{"supported":true,"types":{"enabled":{"supported":true},"adaptive":{"supported":true}}}}},{"type":"model","id":"claude-opus-4-6","display_name":"Claude
         Opus 4.6","created_at":"2026-02-04T00:00:00Z","max_input_tokens":1000000,"max_tokens":128000,"capabilities":{"batch":{"supported":true},"citations":{"supported":true},"code_execution":{"supported":true},"context_management":{"supported":true,"clear_tool_uses_20250919":{"supported":true},"clear_thinking_20251015":{"supported":true},"compact_20260112":{"supported":true}},"effort":{"supported":true,"low":{"supported":true},"medium":{"supported":true},"high":{"supported":true},"xhigh":{"supported":false},"max":{"supported":true}},"image_input":{"supported":true},"pdf_input":{"supported":true},"structured_outputs":{"supported":true},"thinking":{"supported":true,"types":{"enabled":{"supported":true},"adaptive":{"supported":true}}}}}],"has_more":true,"first_id":"claude-sonnet-4-6","last_id":"claude-opus-4-6"}'
-  recorded_at: Tue, 22 Sep 2026 01:42:36 GMT
+  recorded_at: Tue, 22 Sep 2026 15:37:43 GMT
 - request:
     method: get
     uri: https://api.anthropic.com/v1/models?after_id=claude-opus-4-6&limit=2
@@ -265,7 +265,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Tue, 22 Sep 2026 01:42:37 GMT
+      - Tue, 22 Sep 2026 15:37:43 GMT
       Content-Type:
       - application/json
       Transfer-Encoding:
@@ -273,7 +273,7 @@ http_interactions:
       Connection:
       - keep-alive
       Request-Id:
-      - req_011CfHdRkMWBSLoyXTWoNnPs
+      - req_011CfJj7KaSbeNrhh6MjSCeE
       Strict-Transport-Security:
       - max-age=31536000; includeSubDomains; preload
       Anthropic-Organization-Id:
@@ -287,19 +287,19 @@ http_interactions:
       Content-Security-Policy:
       - default-src 'none'; frame-ancestors 'none'
       Server-Timing:
-      - x-originResponse;dur=83
+      - x-originResponse;dur=78
       Cf-Cache-Status:
       - DYNAMIC
       X-Robots-Tag:
       - none
       Cf-Ray:
-      - a3ed9d3168d467f1-SJC
+      - a3f2647f9ebec65e-SJC
     body:
       encoding: ASCII-8BIT
       string: '{"data":[{"type":"model","id":"claude-opus-4-5-20251101","display_name":"Claude
         Opus 4.5","created_at":"2025-11-24T00:00:00Z","max_input_tokens":200000,"max_tokens":64000,"capabilities":{"batch":{"supported":true},"citations":{"supported":true},"code_execution":{"supported":true},"context_management":{"supported":true,"clear_tool_uses_20250919":{"supported":true},"clear_thinking_20251015":{"supported":true},"compact_20260112":{"supported":false}},"effort":{"supported":true,"low":{"supported":true},"medium":{"supported":true},"high":{"supported":true},"xhigh":{"supported":false},"max":{"supported":false}},"image_input":{"supported":true},"pdf_input":{"supported":true},"structured_outputs":{"supported":true},"thinking":{"supported":true,"types":{"enabled":{"supported":true},"adaptive":{"supported":false}}}}},{"type":"model","id":"claude-haiku-4-5-20251001","display_name":"Claude
         Haiku 4.5","created_at":"2025-10-15T00:00:00Z","max_input_tokens":200000,"max_tokens":64000,"capabilities":{"batch":{"supported":true},"citations":{"supported":true},"code_execution":{"supported":false},"context_management":{"supported":true,"clear_tool_uses_20250919":{"supported":true},"clear_thinking_20251015":{"supported":true},"compact_20260112":{"supported":false}},"effort":{"supported":false,"low":{"supported":false},"medium":{"supported":false},"high":{"supported":false},"xhigh":{"supported":false},"max":{"supported":false}},"image_input":{"supported":true},"pdf_input":{"supported":true},"structured_outputs":{"supported":true},"thinking":{"supported":true,"types":{"enabled":{"supported":true},"adaptive":{"supported":false}}}}}],"has_more":true,"first_id":"claude-opus-4-5-20251101","last_id":"claude-haiku-4-5-20251001"}'
-  recorded_at: Tue, 22 Sep 2026 01:42:37 GMT
+  recorded_at: Tue, 22 Sep 2026 15:37:43 GMT
 - request:
     method: get
     uri: https://api.anthropic.com/v1/models?after_id=claude-haiku-4-5-20251001&limit=2
@@ -325,7 +325,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Tue, 22 Sep 2026 01:42:37 GMT
+      - Tue, 22 Sep 2026 15:37:44 GMT
       Content-Type:
       - application/json
       Transfer-Encoding:
@@ -333,7 +333,7 @@ http_interactions:
       Connection:
       - keep-alive
       Request-Id:
-      - req_011CfHdRmwkdTmXDyT8SXriG
+      - req_011CfJj7Ls5o5dbqhX39zuQK
       Strict-Transport-Security:
       - max-age=31536000; includeSubDomains; preload
       Anthropic-Organization-Id:
@@ -347,16 +347,16 @@ http_interactions:
       Content-Security-Policy:
       - default-src 'none'; frame-ancestors 'none'
       Server-Timing:
-      - x-originResponse;dur=57
+      - x-originResponse;dur=93
       Cf-Cache-Status:
       - DYNAMIC
       X-Robots-Tag:
       - none
       Cf-Ray:
-      - a3ed9d33bdd5fdda-SJC
+      - a3f264817d5c7e25-SJC
     body:
       encoding: ASCII-8BIT
       string: '{"data":[{"type":"model","id":"claude-sonnet-4-5-20250929","display_name":"Claude
         Sonnet 4.5","created_at":"2025-09-29T00:00:00Z","max_input_tokens":1000000,"max_tokens":64000,"capabilities":{"batch":{"supported":true},"citations":{"supported":true},"code_execution":{"supported":true},"context_management":{"supported":true,"clear_tool_uses_20250919":{"supported":true},"clear_thinking_20251015":{"supported":true},"compact_20260112":{"supported":false}},"effort":{"supported":false,"low":{"supported":false},"medium":{"supported":false},"high":{"supported":false},"xhigh":{"supported":false},"max":{"supported":false}},"image_input":{"supported":true},"pdf_input":{"supported":true},"structured_outputs":{"supported":true},"thinking":{"supported":true,"types":{"enabled":{"supported":true},"adaptive":{"supported":false}}}}}],"has_more":false,"first_id":"claude-sonnet-4-5-20250929","last_id":"claude-sonnet-4-5-20250929"}'
-  recorded_at: Tue, 22 Sep 2026 01:42:37 GMT
+  recorded_at: Tue, 22 Sep 2026 15:37:44 GMT
 recorded_with: VCR 6.4.0
