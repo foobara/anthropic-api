@@ -61,4 +61,35 @@ RSpec.describe Foobara::Ai::AnthropicApi::CreateMessage do
       end
     end
   end
+
+  context "when hitting the token limit" do
+    let(:inputs) do
+      {
+        api_token:,
+        messages:,
+        system:,
+        max_tokens: 1,
+        fail_if_hitting_token_limit: true
+      }
+    end
+
+    before do
+      FileUtils.rm_rf "#{__dir__}/../tmp"
+    end
+
+    it "gives a token_limit_hit error", vcr: { record: :none } do
+      expect(outcome).to_not be_success
+      expect(errors.size).to be 1
+
+      error = errors.first
+
+      expect(error).to be_a(described_class::HitTokenLimitError)
+
+      error.context => { max_tokens:, model: }
+
+      expect(max_tokens).to be 1
+      # TODO: make this a symbol by default!
+      expect(model.to_sym).to be Foobara::Ai::AnthropicApi.default_llm_model
+    end
+  end
 end
