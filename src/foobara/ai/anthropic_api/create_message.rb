@@ -1,4 +1,4 @@
-require_relative "base_command"
+require_relative "get_model"
 
 module Foobara
   module Ai
@@ -20,6 +20,8 @@ module Foobara
         result Types::MessageResult
 
         possible_error :hit_token_limit, context: { model: :model_enum, max_tokens: :integer }
+
+        depends_on GetModel
 
         def build_request_body
           body = { model:, max_tokens:, messages: }
