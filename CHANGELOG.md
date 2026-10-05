@@ -1,3 +1,8 @@
+## [1.1.0] - 2026-10-04
+
+- Add GetModel command and use it for setting max_tokens to the max by default
+- Add support for failing when hitting token limit
+
 ## [1.0.8] - 2026-09-22
 
 - Consider the last "text" type content to be MessageResult#text
