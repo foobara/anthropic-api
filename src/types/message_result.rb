@@ -23,7 +23,7 @@ module Foobara
           end
 
           def text
-            content.rfind { it.type == "text" }&.text
+            content.reverse.find { it.type == "text" }&.text
           end
 
           def hit_max_tokens? = stop_reason == "max_tokens"
