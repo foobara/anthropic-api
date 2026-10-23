@@ -1,3 +1,7 @@
+## [1.1.1] - 2026-10-23
+
+- Fix Ruby 3.4 breakage
+
 ## [1.1.0] - 2026-10-04
 
 - Add GetModel command and use it for setting max_tokens to the max by default
